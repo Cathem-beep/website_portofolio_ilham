@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Muhammad Ilham Rafi</title>
+    <link rel="stylesheet" href="styles_contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR Bawaan -->
+    <div class="navbar-container">
+        <nav class="navbar">
+            <div class="logo-section">
+                <div class="logo-icon">MI</div>
+                <span class="logo-text">Muhammad <b>Ilham</b> Rafi</span>
+            </div>
+            
+            <button class="hamburger" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="activity.html">Activity</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- MAIN CONTACT SECTION -->
+    <main class="contact-section">
+        <!-- Pattern Latar Belakang & Bintang -->
+        <div class="bg-pattern"></div>
+        <div class="decor-star star-1">✦</div>
+        <div class="decor-star star-2">✦</div>
+
+        <!-- Judul Halaman Bergaya Activity -->
+        <div class="section-header animate-pop">
+            <h1 class="page-heading">KONTAK</h1>
+            <p class="page-subtitle">Mari berdiskusi. Terbuka untuk kolaborasi atau sekadar berbagi pengalaman.</p>
+        </div>
+        
+        <!-- Kontainer Flex Form (Tinggi Sejajar) -->
+        <div class="contact-container animate-slide-up">
+            
+            <!-- Kolom Kiri: Info Kontak bergaya Tabel & Testimoni -->
+            <div class="contact-left">
+                
+                <!-- Kotak Info (Tabel) -->
+                <div class="info-table-box">
+                    <div class="info-row">
+                        <div class="icon-box">✉️</div>
+                        <div class="detail-text">
+                            <strong>EMAIL</strong>
+                            <span>iham...@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="icon-box">📍</div>
+                        <div class="detail-text">
+                            <strong>LOKASI</strong>
+                            <span>Semarang, Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kotak Bagikan Testimoni -->
+                <div class="testimonial-box">
+                    <h4 class="testimoni-title">BAGIKAN TESTIMONI</h4>
+                    <p class="testimoni-desc">Pernah belajar atau bekerja sama? Bagikan kesan Anda — akan ditampilkan setelah dimoderasi.</p>
+                    <form action="#" class="testimoni-form">
+                        <input type="text" placeholder="Nama" required>
+                        <input type="text" placeholder="Peran (mis. Alumni - Kelas XII)" required>
+                        <textarea rows="3" placeholder="Tuliskan testimoni Anda..." required></textarea>
+                        <button type="submit" class="btn-testimoni">Kirim Testimoni</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Kolom Kanan: Form Kontak Utama -->
+            <div class="contact-right">
+                <form action="#" class="main-form">
+                    <div class="form-inputs-wrap">
+                        <div class="form-group">
+                            <label>NAMA</label>
+                            <input type="text" placeholder="Nama Anda" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>EMAIL</label>
+                            <input type="email" placeholder="anda@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>SUBJEK</label>
+                            <input type="text" placeholder="Topik diskusi" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>PESAN</label>
+                            <textarea rows="4" placeholder="Tuliskan pesan Anda..." required></textarea>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Kirim Pesan ↗</button>
+                </form>
+            </div>
+            
+        </div>
+    </main>
+
+    <script>
+        // Logika Hamburger Menu
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('active');
+            navLinks.classList.toggle('show-menu');
+        });
+    </script>
+</body>
+</html>

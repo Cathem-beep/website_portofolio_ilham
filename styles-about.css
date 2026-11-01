@@ -173,7 +173,6 @@
         .about-heading span {
             position: relative;
             display: inline-block;
-            color: var(--primary-blue);
         }
         
         .about-heading span::after {
@@ -270,7 +269,7 @@
             animation: pulseStar 4s ease-in-out infinite alternate;
         }
 
-        .star-1 { top: 10%; left: 2%; transform: rotate(15deg); }
+        .star-1 { top: 10%; left: 2%; transform: rotate(15deg); z-index: 99;}
         .star-2 { bottom: 5%; right: 5%; font-size: clamp(60px, 10vw, 120px); transform: rotate(-15deg); animation-delay: 1s; }
 
         .bg-pattern {
